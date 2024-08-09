@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: yellowgreen;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: rgb(11, 70, 17);
+            font-size: 60;
+        }
+
+        .image {
+            width: 350;
+            height: auto;
+        }
+
+        .image-container {
+            position: relative;
+            width: 350px;
+            height: 200px;
+        }
+
+        .image-container img {
+            width: 350;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            font-weight: bolder;
+            font-size: 50;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Semi-transparent background */
+            color: #fdbc08;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navbar {
+            position: fixed;
+            justify-content: space-around;
+            display: flex;
+            background-color: rgb(87, 117, 25);
+            list-style-type: none;
+            width: 100%;
+            margin-top: 0;
+            margin-left: 0;
+            padding: 0;
+        }
+
+        .nav {
+            color: white;
+            font-weight: 600;
+            font-size: 20;
+            display: block;
+            padding: 10;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .nav:hover {
+            color: #fdbc08;
+        }
+
+        .img2 {
+            width: 100%;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+            padding-left: 40;
+            padding-right: 40;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            /* background-color: white; */
+            height: ;
+            background-image:url("https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/AU_local/2022/Products_AU/911-GTS--Product-Highlights/911-GTS-Australian-images---exterior-static/PORSCHE_TAYCANGTS_911GTS_DKIMG_0920.jpg/jcr:content/PORSCHE_TAYCANGTS_911GTS_DKIMG_0920.jpg");
+
+        }
+
+        .sentance {
+            padding: 30;
+            width: 700;
+            font-size: 18;
+            word-spacing: 5;
+            position: absolute;
+            right: 16px;
+            bottom: 16px;  }
+
+        .photo {
+            display:flex;
+            position: static;
+            justify-content: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        span {
+            font-size: 20;
+            color: yellowgreen;
+        }
+        .sample{
+            display:block
+         
+        }
+        .smdiv{
+            
+            margin: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li class="nav">Home</li>
+        <li class="nav">Store</li>
+        <li class="nav"><a href="C:\Users\mshan\OneDrive\Desktop\html_projects\form_sample.html">Support</a></li>
+        <li class="nav"><a href="#about1">About</a></li>
+    </ul>
+    <br>
+    <center>
+        <h1>Porsche 911 <img src="https://toppng.com/uploads/preview/porsche-logo-vector-11574232313ojqjq0wmkt.png"
+                height="50"></h1>
+        <div class="image-container">
+            <img src="https://files.porsche.com/filestore/image/multimedia/none/911-tus-modelimage-sideshot/model/930894f1-6214-11ea-80c8-005056bbdc38/porsche-model.png"
+                alt="Sample Image">
+            <div class="overlay">Porche 911</div>
+        </div>
+    </center>
+    <div style="height: 400;"></div>
+    <div class="about" id="about1">
+        <div class="sentance"><span>"</span> The Porsche 911 is a masterpiece of automotive engineering, blending
+            timeless design with exhilarating performance. Renowned for its iconic silhouette, the 911 offers an
+            unparalleled driving experience with its powerful engine, precision handling, and luxurious interior.
+            Whether on a racetrack or a winding road, the Porsche 911 sets the standard for sports cars, delivering
+            unmatched speed, agility, and style. This legendary model continues to captivate car enthusiasts and
+            embodies the pinnacle of Porsche's commitment to innovation and excellence <span>"</span></div>
+    </div>
+    <div style="height: 500;color: paleturquoise;"></div>
+</body>
+
+</html>
