@@ -89,30 +89,33 @@
         }
 
         .about {
-            display: flex;
             justify-content: center;
-            padding-left: 40;
-            padding-right: 40;
+            position: relative;
             margin-top: 0;
             margin-left: 0;
             margin-right: 0;
             /* background-color: white; */
-            height: ;
-            background-image:url("https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/AU_local/2022/Products_AU/911-GTS--Product-Highlights/911-GTS-Australian-images---exterior-static/PORSCHE_TAYCANGTS_911GTS_DKIMG_0920.jpg/jcr:content/PORSCHE_TAYCANGTS_911GTS_DKIMG_0920.jpg");
+            height: 400;
 
         }
 
         .sentance {
-            padding: 30;
-            width: 700;
+            color: white;
             font-size: 18;
-            word-spacing: 5;
+            word-spacing: 8px;
             position: absolute;
-            right: 16px;
-            bottom: 16px;  }
+            right: 5px;
+            bottom: 0px;
+            width: 600;
+            border: black solid 2px;
+            border-radius: 20px;
+            box-shadow:0 5 5 rgba(138, 217, 12,) ; 
+
+            line-break: strict;
+        }
 
         .photo {
-            display:flex;
+            display: flex;
             position: static;
             justify-content: center;
         }
@@ -126,13 +129,13 @@
             font-size: 20;
             color: yellowgreen;
         }
-        .sample{
-            display:block
-         
+
+        .sample {
+            display: block
         }
-        .smdiv{
-            
-            margin: 5;
+
+        .img3 {
+            width: 100%;
         }
     </style>
 </head>
@@ -156,12 +159,15 @@
     </center>
     <div style="height: 400;"></div>
     <div class="about" id="about1">
-        <div class="sentance"><span>"</span> The Porsche 911 is a masterpiece of automotive engineering, blending
+        <img class="img3"
+            src="https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/AU_local/2022/Products_AU/911-GTS--Product-Highlights/911-GTS-Australian-images---exterior-static/PORSCHE_TAYCANGTS_911GTS_DKIMG_0920.jpg/jcr:content/PORSCHE_TAYCANGTS_911GTS_DKIMG_0920.jpg"
+            alt="">
+        <div class="sentance"> <p>The Porsche 911 is a masterpiece of automotive engineering, blending
             timeless design with exhilarating performance. Renowned for its iconic silhouette, the 911 offers an
             unparalleled driving experience with its powerful engine, precision handling, and luxurious interior.
             Whether on a racetrack or a winding road, the Porsche 911 sets the standard for sports cars, delivering
             unmatched speed, agility, and style. This legendary model continues to captivate car enthusiasts and
-            embodies the pinnacle of Porsche's commitment to innovation and excellence <span>"</span></div>
+            embodies the pinnacle of Porsche's commitment to innovation and excellence</p></div>
     </div>
     <div style="height: 500;color: paleturquoise;"></div>
 </body>
