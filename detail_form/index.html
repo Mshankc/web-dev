@@ -5,35 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="css\style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<script>
-    function validate() {
-        if (document.getElementById('number') == Number) {
-            alert('succesfull');
-        } else { alert('enter valid number') }
 
+<script>
+    function validation() {
+        const name = document.getElementById('name').value;
+        const number = document.getElementById('phone').value;
+        const email = document.getElementById('mail').value;
+        const age = document.getElementById('age').value;
+        let isTrue = false;
+
+        const phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number");
+                return false;
+            }
+        document.write("Name: " + name + "<br>");
+        document.write("Phone Number: " + number + "<br>");
+        document.write("Email: " + email + "<br>");
+        document.write("Age: " + age + "<br>");
+
+        // Returning false to prevent form submission for demonstration
+        return false;
     }
 </script>
 
 <body>
     <div class="inp-form">
-        <form action="" method="post">
+        <form action="" method="post" onsubmit="return validation()">
             <h2>REGISTER</h2>
-            <input type="text" name="full name" placeholder="Full Name" id="name">
-            <input type="number" name="number" placeholder="Phone Number" id="phone">
-            <input type="email" name="email" placeholder="e-mail" id="mail">
-            <input type="age" name="age" placeholder="Age" id="age">
+            <input type="text" name="full name" placeholder="Full Name" id="name" required>
+            <input type="number" name="number" placeholder="Phone Number" id="phone" required>
+            <input type="email" name="email" placeholder="e-mail" id="mail" required>
+            <input type="number" name="age" placeholder="Age" id="age" required>
 
             <div class="buttons">
                 <button id="rst" type="reset">Reset</button>
-                <button type="submit" id="btn" onclick="validate()">Submit</button>
+                <button type="submit" id="btn" value="submit">Submit</button>
             </div>
         </form>
     </div>
-
-
 </body>
 
 </html>
