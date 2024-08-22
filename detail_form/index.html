@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: rgb(226, 226, 226);
+        }
+
+        input {
+            display: block;
+            margin: 10px;
+        }
+
+        form {
+            position: relative;
+            justify-content: center;
+            background-color: white;
+        }
+
+        button {
+            align-items: center;
+        }
+    </style>
+</head>
+<script>
+    function validate() {
+        if (document.getElementById('number') == Number) {
+            alert('succesfull');
+        } else { alert('enter valid number') }
+
+    }
+</script>
+
+<body>
+    <div class="inp-form">
+        <form action="" method="post">
+            <input type="text" name="full name" placeholder="Full Name" id="name">
+            <input type="number" name="number" placeholder="Phone Number" id="phone">
+            <input type="email" name="email" placeholder="e-mail" id="mail">
+            <input type="age" name="age" placeholder="Age" id="age">
+            <button id="rst" type="reset">Reset</button>
+            <button type="submit" id="btn" onclick="validate()">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
