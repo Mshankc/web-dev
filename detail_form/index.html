@@ -7,22 +7,61 @@
     <title>Form</title>
     <style>
         body {
-            background-color: rgb(226, 226, 226);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
         }
 
         input {
-            display: block;
-            margin: 10px;
+            width: 100%;
+            padding: 10px;
+
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
         }
 
-        form {
-            position: relative;
-            justify-content: center;
+        input ::placeholder {
+            font-size: 20px;
+        }
+
+        .inp-form {
             background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
         }
 
         button {
-            align-items: center;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .buttons {
+            display: flex;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+
         }
     </style>
 </head>
@@ -38,12 +77,16 @@
 <body>
     <div class="inp-form">
         <form action="" method="post">
+            <h2>REGISTER</h2>
             <input type="text" name="full name" placeholder="Full Name" id="name">
             <input type="number" name="number" placeholder="Phone Number" id="phone">
             <input type="email" name="email" placeholder="e-mail" id="mail">
             <input type="age" name="age" placeholder="Age" id="age">
-            <button id="rst" type="reset">Reset</button>
-            <button type="submit" id="btn" onclick="validate()">Submit</button>
+
+    </div>
+    <div class="buttons">
+        <button id="rst" type="reset">Reset</button>
+        <button type="submit" id="btn" onclick="validate()">Submit</button>
         </form>
     </div>
 
