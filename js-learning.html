@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function example(fname, lname, age) {
+        let fName = document.getElementById(fname).value;
+        let lName = document.getElementById(lname).value;
+        let objAge = document.getElementById(age).value;
+
+        const person = {
+            firstName: fName,
+            lastName: lName,
+            age: objAge
+        }
+
+        alert(person.lastName);
+        return false
+    }
+</script>
+
+<body>
+    <form onsubmit="return example('f-name','l-name','age')" method="post">
+        <input type="text" id="f-name" placeholder="first name">
+        <input type="text" id="l-name" placeholder="last name">
+        <input type="text" id="age" placeholder="age">
+        <button type="submit">click here</button>
+    </form>
+</body>
+
+</html>
