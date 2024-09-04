@@ -5,9 +5,13 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div1").fadeIn();
-    $("#div2").fadeIn("slowest");
-    $("#div3").fadeIn(6000);
+    for(var a=1;a<=10;a++){
+    $("#div1").fadeIn(1000);
+    $("#div2").fadeIn(2000);
+    $("#div3").fadeIn(3000);
+    $("#div1").fadeOut(1000);
+    $("#div2").fadeOut(2000);
+    $("#div3").fadeOut(3000);}
   });
 });
 </script>
