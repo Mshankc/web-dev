@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $("h1").hide();
+  });
+});
+</script>
+</head>
 <body>
-    <h1>JavaScript HTML Events</h1>
-    <h2>The onclick Attribute</h2>
 
-    <p id="dd">Click the button to display the date.</p>
-    <button onmouseover="displayDate()">The time is?</button>
-    <button onclick="hideData()">Hide element</button>
-
-    <script>
-        function displayDate() {
-            document.getElementById("demo").innerHTML = Date();
-        }
-        function hideData() {
-            document.getElementById("dd").style.display="none"
-        }
-    </script>
-
-    <p id="demo"></p>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<h1 script="$(this).hide()">heading </h1>
 
 </body>
-
 </html>
